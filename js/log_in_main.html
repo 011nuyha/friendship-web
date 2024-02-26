@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F7EFEF;
+        }
+        .logo{
+            left : 100px;
+            top : 20px;
+            margin-bottom : 40px;
+            width:403px;
+            height:310px;
+            margin-right: 40px;
+
+        }
+        .log_in{
+            padding: 10px 20px; /* 버튼 크기 조정을 위해 패딩을 조절하세요 */
+            font-size: 30px;
+            width :200px;
+            margin-bottom: 0px;
+            color : black;
+            left : 100px;
+            border-radius: 30px;
+            border:none;
+            background-color: #F8E5E5;
+            height: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 추가 */
+        }
+        .member{
+            padding: 10px 20px; /* 버튼 크기 조정을 위해 패딩을 조절하세요 */
+            font-size: 30px;
+            margin-bottom: 0px;
+            width : 200px;
+            color : black;
+            left : 100px;
+            border-radius: 30px;
+            border:none;
+            background-color: #F8E5E5;
+            height: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 추가 */
+        }
+        .find{
+            width : 243.33px;
+            margin-bottom: 0px;
+            padding: 10px 20px; /* 버튼 크기 조정을 위해 패딩을 조절하세요 */
+            font-size: 30px;
+            color : black;
+            left : 100px;
+            border-radius: 30px;
+            border:none;
+            background-color: #F05959;
+            border-bottom: 0px;
+            height: 60px;
+        }
+        .forgot:hover{
+            font-size: 20px ;
+            font-weight: bold;
+            margin-top: 0px;
+
+        }
+        .bind{
+            background-color: #FDB8B8;
+            border: 2px solid #000;
+            align-items: center;
+            width:330px;
+            height:330px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 30px;
+            border:none;
+            padding-top: 30px;
+            margin-left:40px
+        }
+    </style>
+</head>
+<body>
+    <img src = ".\mainlogo.png.png" alt = "로고" class = "logo">
+    <div class="bind">
+        <label for ="userid">
+            <input type="text" class = "log_in" id="userid" placeholder="ID"> 
+                
+            </input>
+        </label>
+        <br>
+        <label for ="userpw">
+            <input type="password" class = "member" id="userpw" placeholder="PW"> 
+                
+        </input>
+        </label>
+        <br>
+        <label >
+            <button class = "find" onclick="location.href='#'"> 
+                로그인 
+            </button>
+        </label>
+        <br>
+        <label>
+            <p class="forgot" onclick="location.href='memberlogin.html'">
+                아직 계정이 없으신가요?/회원가입
+            </p>
+        </label>
+        
+    </div>
+    <script>
+        function memberlogin() {
+             var link='memberlogin.html';
+             window.location.href = link;
+         }
+         function login() {
+             var link='#';
+             window.location.href = link;
+         }
+     </script>
+        
+</body>
+</html>

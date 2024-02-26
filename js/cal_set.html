@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition-delay</title>
+  <style>
+     body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F7EFEF;
+        }
+        .cal{
+            display: flex;
+            flex-direction: row;
+            width :200px;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+        .bind{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:#F05959 ;
+            height: 80%;
+            width: 40%;
+        }
+        .title,.memo,.telephone
+        {   
+            background-color: #D9D9D9;
+            width:300.15px;
+            height:40px;
+            border: none;
+            border-radius: 3px;
+        }
+        .f_cal,.s_cal
+        {
+            background-color: #D9D9D9;
+            border-radius: 3px;
+            width :45%;
+            height:100%
+
+        }
+
+        
+
+   
+  </style>
+</head>
+<body>
+  <div class="bind">
+    <div class="alarm">
+        <input type="text" id="title" placeholder="할 일" class="title">
+    </div>
+    <div class="icon">
+        <p class="letter">알림<p>
+    </div>
+    <div class="cal">
+        <div class="f_cal">
+         <p>2월 26</p>
+         <p>오전 12시</p>
+        </div>
+        <div class="arrow">
+            <p>-></p>
+        </div>
+        <div class="s_cal">
+        <p>2월 26</p>
+        <p>오전 12시</p>
+       </div>
+    </div>
+    <div class="top_memo">
+        <input type="text" id="memo" placeholder="메모" class="memo">
+    </div>
+    <div class="tele">
+        <input type="text" id="telephone" placeholder="연락처" class="telephone">
+    </div>
+
+  </div>
+</body>
+</html>
