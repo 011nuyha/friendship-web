@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membership</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F7EFEF;
+        }
+        .logo {
+            height: 100px;
+            width:100px;
+        }
+        .bind {
+            padding-top:30px;
+            padding-bottom:20px;
+            border:none;
+            background-color: #FDB8B8;
+            width:400px;
+        }
+        .id, .name, .email {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #F8E5E5;
+            border:none;
+        }
+        .pw, .confirm {
+            width: 50%;
+            height: 40px;
+            margin-right: 5px; /* PW와 PW 확인 사이 간격 조절 */
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #F8E5E5;
+            border:none;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+        .button {
+            background-color: #F05959;
+            border-radius: 10px;
+            border:none;
+            width:120px;
+            height:35px;
+        }
+        .margin
+        {   
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+   <form action='#' method="post">
+        <fieldset class="bind">
+            <div class="margin">
+            <div class="form-row">
+                <input type="text" id="id" placeholder="ID" class="id">
+            </div>
+            <div class="form-row">
+                <input type="text" id="pw" placeholder="PW" class="pw">
+                <input type="text" id="confirm" placeholder="PW 확인" class="confirm">
+            </div>
+            <div class="form-row">
+                <input type="text" id="name" placeholder="이름" class="name">
+            </div>
+            <div class="form-row">
+                <input type="text" id="email" placeholder="email" class="email">
+            </div>
+            <div>
+            <button class="button">회원 가입 완료</button>
+            </div>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
