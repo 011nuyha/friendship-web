@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>헤더</title>
+  <link rel="stylesheet" href="../css/headerstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <span class="large">우</span><span class="small">리들의</span><br>
+                <span class="large">정</span><span class="small">보통</span>
+            </div>
+            <div class="button-container">
+                <a href="#" class="header-button">사이트 목록</a>
+                <a href="#" class="header-button">캘린더</a>
+                <a href="#" class="header-button">알림 목록</a>
+                <div class="header-button">설정 
+                    <div class="dropdown-menu">
+                        <a href="personal_info.html" target="_blank">개인정보 수정</a>
+                        <a href="delete.html" target="_blank">회원탈퇴</a>
+                        <a class="button" onclick="toggleDarkMode()">다크모드 설정</a>
+                        <a href="#">알림 받아오는 주기 선택</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <script>
+            function toggleDarkMode() {
+              var body = document.body;
+              var headerLeft = document.querySelector('.header-left');
+              var button = document.querySelector('.button');
+
+              if (body.classList.contains('dark-mode')) { // 현재 상태가 다크 모드일 때
+                body.classList.remove('dark-mode'); 
+                body.style.backgroundColor = '#F8E5E5'; 
+                headerLeft.style.color = 'black'; 
+                button.textContent = '다크모드 설정';
+               
+              } else { // 현재 상태가 라이트 모드일 때
+                body.classList.add('dark-mode');
+                body.style.backgroundColor = 'black'; 
+                headerLeft.style.color = 'white';
+                button.textContent = '라이트모드 설정';
+              }
+            }
+          </script>
+</body>
+</html>
